@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FaBell, FaHome, FaSignOutAlt, FaUser, FaUserCircle } from 'react-icons/fa'
 
 const ResponsiveMenu = () => {
+  const [showMenu, setShowMenu] = useState(false)
+
+
   return (
     <div className={`
     ${showMenu ? "-left-[100%]" : "left-0"} h-screen w-[75%] bg-slate-950 fixed top-0 z-50 transition-all duration-500 ease-in-out

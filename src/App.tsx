@@ -1,14 +1,18 @@
 
 import './App.css'
+import Hero from './components/hero/Hero'
+import Navbar from './components/navbar/Navbar'
+import OverviewCounter from './components/overiew/OverviewCounter'
 
 function App() {
  
 
   return (
-    <div>
-      <h1>My Web Page</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis obcaecati provident deserunt dolorem, quo nobis qui voluptates. Magnam voluptas veritatis, obcaecati, nihil beatae unde enim odio laboriosam deleniti ullam rem?</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <OverviewCounter />
+    </>
 
   )
 }

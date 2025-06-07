@@ -12,8 +12,15 @@ const Hero = () => {
         </h1>
         <p>
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
             
         </p>
+        <div>
+            <button className='btn-primary'>Get Started</button>
+            <button className='btn-outline'>Login</button>
+
+        </div>
     </div>
     <div>
         <img src='Banner' alt='banner'/>

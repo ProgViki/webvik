@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiPhoneCall } from 'react-icons/bi'
 
 const Navbar = () => {
   return (
