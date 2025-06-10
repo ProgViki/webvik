@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FaBell, FaHome, FaSignOutAlt, FaUser, FaUserCircle } from 'react-icons/fa'
 
-const ResponsiveMenu = () => {
-  const [showMenu, setShowMenu] = useState(false)
+const ResponsiveMenu = ({showMenu }: {showMenu: boolean}) => {
+  // const [showMenu, setShowMenu] = useState(false)
 
 
   return (

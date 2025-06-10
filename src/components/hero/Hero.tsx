@@ -16,7 +16,7 @@ const Hero = () => {
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
             
         </p>
-        <div>
+        <div className='flex gap-4'>
             <button className='btn-primary'>Get Started</button>
             <button className='btn-outline'>Login</button>
 

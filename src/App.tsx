@@ -19,7 +19,7 @@ function App() {
       <BannerDetails />
       {/* <BannerDetails reverse={true}/> */}
       <SimpleBanner />
-      <Blogs />
+      {/* <Blogs /> */}
       <Footer />
 
     </>
