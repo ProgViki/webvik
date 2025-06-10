@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroImg from "../../assets/computer-desktop-icon.svg"
 
 const Hero = () => {
   return (
@@ -22,8 +23,8 @@ const Hero = () => {
 
         </div>
     </div>
-    <div>
-        <img src='Banner' alt='banner'/>
+    <div className='mx-auto p-4 max-w-xs'>
+        <img src={HeroImg} alt='banner' className=''/>
     </div>
         </div>
       </section>

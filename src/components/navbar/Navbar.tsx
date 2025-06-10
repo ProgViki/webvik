@@ -47,26 +47,31 @@ const Navbar = () => {
         <ul className="flex items-center gap-6">
           {/* Home Dropdown */}
           <li className="relative group cursor-pointer">
-            <div className="flex items-center gap-1">
-              Home <IoMdArrowDropdown />
+            <a href="#" className="flex items-center gap-1">
+            Home {" "}
+              <span>
+                <FaCaretDown className='transition-all duration-300 group-hover:rotate-180' />
+              </span>
+            </a>
+              <div className='className="absolute -left-9 z-[99999] hidden group-hover:block bg-white text-black mt-48 shadow-md rounded-b-3xl w-[150px] p-2'>
+                <ul className="space-y-3">
+                  <li className="p-2 hover:bg-gray-100 cursor-pointer">Services</li>
+                  <li className="p-2 hover:bg-gray-100 cursor-pointer">About Us</li>
+                  <li className="p-2 hover:bg-gray-100 cursor-pointer">Privacy Policy</li>
+                </ul>
             </div>
-            <ul className="absolute hidden group-hover:block bg-white text-black mt-2 shadow-md rounded-md w-40">
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Services</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">About Us</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Privacy Policy</li>
-            </ul>
           </li>
 
           {/* Services Dropdown */}
           <li className="relative group cursor-pointer">
-            <a className="flex items-center gap-1">
+            <a href="#" className="flex items-center gap-1 h-[72px]">
               Services {" "}
               <span>
                 <FaCaretDown className='transition-all duration-300 group-hover:rotate-180' />
               </span>
               {/* <IoMdArrowDropdown /> */}
             </a>
-            <div className='className="absolute left-0 z-[99999] hidden group-hover:block bg-white text-black mt-2 shadow-md rounded-b-3xl w-full p-2'>
+            <div className='className="absolute left-0 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-full p-2'>
               <div className='grid grid-cols-3 gap-5'>
                 <div className='overflow-hidden'>
                   <img src="https://picsum.photos/200" alt="not found" 
@@ -81,6 +86,35 @@ const Navbar = () => {
             </ul> */}
               <div className='col-span-2'>
                 <h1 className='pb-1 text-2xl font-semibold'>Best Selling</h1>
+                <p className='text-sm text-slate-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Dolore provident esse quos reprehenderit numquam iste fugit 
+                  aut est odit dignissimos explicabo facilis maxime modi consequatur
+                   laboriosam perspiciatis rerum atque quod, libero autem corrupti optio? Ducimus necessitatibus consequatur incidunt expedita tenetur doloremque esse eos qui sint accusantium a, sunt nulla delectus iusto beatae ullam sit animi odit assumenda exercitationem! Ullam architecto illum, ab tempore sapiente molestias, cum minima deleniti, repellendus expedita tenetur explicabo ea dolorum dicta possimus nisi et atque! Exercitationem inventore eum delectus excepturi aperiam consequatur sequi officia ipsum molestiae
+                   expedita commodi, ad vitae vel corrupti neque dicta, vero quo.
+                   <div className='grid grid-cols-3 mt-4'>
+                    <div>
+                       <h1>Development</h1>
+                <ul>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Web Development</li>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Mobile Development</li>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Software Development</li>
+            </ul>
+                    </div>
+                    <div>
+                       <h1>Development</h1>
+                <ul>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Web Development</li>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Mobile Development</li>
+              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Software Development</li>
+            </ul>
+                    </div>
+                    <div>
+                      <img 
+                      src="https://picsum.photos/180" 
+                      alt="not found" />
+                    </div>
+                   </div>
+                   </p>
               </div>
               </div>
               
@@ -96,7 +130,7 @@ const Navbar = () => {
           </li>
 
           {/* Contact Icon */}
-          <li className=" hover:text-primary flex">
+          <li className="hover:text-primary flex">
             <div className="flex items-center gap-4">
               <BiPhoneCall className='text-2xl h-[40px] w-[40px] bg-primary text-white hover:bg-primary/90 rounded-full p-2 '/>
             </div>
