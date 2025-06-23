@@ -1,14 +1,16 @@
 import React from 'react'
 
-const BlogCard = ({Img}) => {
+const BlogCard = (
+  // {Img}
+) => {
   return (
     <>
       <div className='p-4 shadow-lg'>
         <div className='overflow-hidden'>
-          <img src={Img1} 
+          {/* <img src={Img1}
           alt="No Image"
           className='mx-auto h-[250px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110'
-           />
+           /> */}
           
         </div>
       </div>
@@ -20,6 +22,7 @@ const BlogCard = ({Img}) => {
         <h1 className='line-clamp-2'>
           How to grow your business. How to grow your business. How to grow your business.
         </h1>
+        <p className="line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cupiditate.</p>
       </div>
     </>
   )

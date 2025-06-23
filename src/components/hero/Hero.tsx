@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from "../../assets/computer-desktop-icon.svg"
+import HeroImg from "../../assets/desktop-hero.png"
 
 const Hero = () => {
   return (
@@ -7,7 +7,11 @@ const Hero = () => {
       <section className='container flex flex-col items-center justify-between'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 dark:text-white'>
 
-    <div className='flex flex-col items-center gap-4 md:items-start md:text-left justify-center'>
+    <div  
+          data-aos="fade-right"
+          data-aos-duration="400"
+          data-aos-once="true"
+          className='flex flex-col items-center gap-4 md:items-start md:text-left justify-center'>
         <h1 className='text-4xl md:text-5xl font-bold text-white'>
             We build apps that Get trending on Appworld
         </h1>

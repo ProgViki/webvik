@@ -34,7 +34,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="bg-navbar text-white">
+    <header className="bg-navbar text-white border-b-[1px] border-primary">
       <nav className="container flex items-center justify-between h-[70px] py-2">
         {/* Logo */}
         <div className="text-2xl md:text-3xl">
@@ -44,7 +44,8 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu Section */}
-        <ul className="flex items-center gap-6">
+        <div className="hidden md:block ">
+          <ul className="flex items-center gap-10">
           {/* Home Dropdown */}
           <li className="relative group cursor-pointer">
             <a href="#" className="flex items-center gap-1">
@@ -71,10 +72,10 @@ const Navbar = () => {
               </span>
               {/* <IoMdArrowDropdown /> */}
             </a>
-            <div className='className="absolute left-0 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-full p-2'>
+            <div className='absolute left-0 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-full p-2'>
               <div className='grid grid-cols-3 gap-5'>
                 <div className='overflow-hidden'>
-                  <img src="https://picsum.photos/200" alt="not found" 
+                  <img src="https://picsum.photos/200" alt="not found"
                   className='max-h-[300px] w-full rounded-b-3xl object-fill'
                   />
                 </div>
@@ -89,7 +90,12 @@ const Navbar = () => {
                 <p className='text-sm text-slate-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                   Dolore provident esse quos reprehenderit numquam iste fugit 
                   aut est odit dignissimos explicabo facilis maxime modi consequatur
-                   laboriosam perspiciatis rerum atque quod, libero autem corrupti optio? Ducimus necessitatibus consequatur incidunt expedita tenetur doloremque esse eos qui sint accusantium a, sunt nulla delectus iusto beatae ullam sit animi odit assumenda exercitationem! Ullam architecto illum, ab tempore sapiente molestias, cum minima deleniti, repellendus expedita tenetur explicabo ea dolorum dicta possimus nisi et atque! Exercitationem inventore eum delectus excepturi aperiam consequatur sequi officia ipsum molestiae
+                   laboriosam perspiciatis rerum atque quod, libero autem corrupti optio? Ducimus necessitatibus 
+                   consequatur incidunt expedita 
+                   tenetur doloremque esse eos qui sint accusantium a, sunt nulla delectus iusto beatae ullam 
+                   sit animi odit assumenda exercitationem! Ullam architecto illum, ab tempore sapiente molestias, 
+                   cum minima deleniti, repellendus expedita tenetur explicabo ea dolorum dicta possimus nisi et atque! 
+                   Exercitationem inventore eum delectus excepturi aperiam consequatur sequi officia ipsum molestiae
                    expedita commodi, ad vitae vel corrupti neque dicta, vero quo.
                    <div className='grid grid-cols-3 mt-4'>
                     <div>
@@ -165,6 +171,7 @@ const Navbar = () => {
           }
           </div>
         </ul>
+        </div>
                 {/* mobile screen section */}
         <div className='flex items-center gap-4 md:hidden '>
             {
