@@ -8,18 +8,18 @@ const ResponsiveMenu = ({showMenu }: {showMenu: boolean}) => {
   return (
     <div className={`
     ${showMenu ? "-left-[100%]" : "left-0"} h-screen w-[75%] bg-slate-950 fixed top-0 z-50 transition-all duration-500 ease-in-out
-    pt-24 pb-6 px-8 flex flex-col justify-between text-white
+    pt-24 pb-6 px-8 flex flex-col justify-between text-white md:hidden
     `}
     >
       <div>
-        <div className="flex flex-col justify-start gap-4">
+        <div className="flex flex-col justify-start gap-3">
             <FaUserCircle size={50}/>
             <div>
-                <h1>Dilshed Ahmed</h1>
+                <h1>Victor Mimi</h1>
                 <h1 className='text-sm text-slate-500'>Premium user</h1>
             </div>
       </div>
-      <nav>
+      <nav className='mt-12'>
         <ul className='flex flex-col gap-4 mt-10'>
             <li className='flex items-center gap-2'>
                 <FaHome size={20}/>

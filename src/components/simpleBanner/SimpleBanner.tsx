@@ -6,9 +6,9 @@ const SimpleBanner = () => {
       <div className='container mx-auto px-8 md:py-12'>
         <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8 '>
         <div>
-          <iframe src="https://www.youtube.com/embed/8jv2s2eUjYU" 
+          <iframe src="https://www.youtube.com/embed/gRWMen27Uio?si=VtHMh9xCxQ6ccFh8"
                 className='aspect-video w-full h-96 md:h-96 rounded-2xl'
-                frameborder="0"
+                // frameborder="0"
                 title='Youtube video player'
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

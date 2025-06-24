@@ -5,7 +5,7 @@ interface Type {
 }
 const BannerDetails = ({ reverse }: Type) => {
   return (
-    <section className='bg-slate-100 dark:bg-slate-900 dark:text-white'>
+    <section className='bg-slate-100 dark:bg-slate-900 dark:text-white px-6 md:px-12'>
       <div className='container flex flex-col items-center justify-center py-10 md:h-[500px] '>
         <div className='grid grid-cols-1 items-center gap-4 md:grid-cols-2'>
             <div className={`grid grid-cols-1 items-start gap-4 text-left md:items-start md:p-8 md:text-left ${

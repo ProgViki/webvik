@@ -3,14 +3,15 @@ import { BiPhoneCall, BiSolidMoon, BiSolidSun } from 'react-icons/bi';
 import { FaCaretDown } from 'react-icons/fa';
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import ResponsiveMenu from './ResponsiveMenu';
 
 const Navbar = () => {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // const toggleTheme = () => {
-  //   setIsDarkMode(!isDarkMode);
-  //   document.documentElement.classList.toggle('dark');
-  // };
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle('dark');
+  };
 
   const [showMenu, setShowMenu] = useState(false);
   const element = document.documentElement;
@@ -34,7 +35,8 @@ const Navbar = () => {
   }
 
   return (
-    <header className="bg-navbar text-white border-b-[1px] border-primary">
+    <>
+    <header className="bg-navbar z-[50] w-full shadow-md fixed text-white border-b-[1px] border-primary px-6 md:px-12">
       <nav className="container flex items-center justify-between h-[70px] py-2">
         {/* Logo */}
         <div className="text-2xl md:text-3xl">
@@ -72,7 +74,7 @@ const Navbar = () => {
               </span>
               {/* <IoMdArrowDropdown /> */}
             </a>
-            <div className='absolute left-0 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-full p-2'>
+            <div className='absolute left-9 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-[150px] p-2'>
               <div className='grid grid-cols-3 gap-5'>
                 <div className='overflow-hidden'>
                   <img src="https://picsum.photos/200" alt="not found"
@@ -158,17 +160,20 @@ const Navbar = () => {
           {/* Light and Dark Mode Switcher */}
           
           <div className='flex items-center gap-4 '>
-            {
-            theme === "dark" ? (
-              <li className="text-xl hover:text-primary cursor-pointer" >
-                <BiSolidSun onClick={() => setTheme("light")}/>
+            {/* {theme === "dark" ? ( */}
+              {/* <li className="text-xl hover:text-primary cursor-pointer" > */}
+                {/* <BiSolidSun onClick={() => setTheme("light")}/> */}
+                {/* <BiSolidSun onClick={() => setTheme("light")}/> */}
+
+              {/* </li> */}
+            {/* ) : ( */}
+              {/* <li className="text-xl hover:text-primary cursor-pointer"> */}
+                {/* <BiSolidMoon onClick={() => setTheme("dark")}/> */}
+                {/* <BiSolidMoon onClick={() => setTheme("dark")}/> */}
+              {/* </li>)} */}
+              <li onClick={toggleTheme} className="text-xl cursor-pointer hover:text-primary">
+                  {theme === "dark" ? <BiSolidSun /> : <BiSolidMoon />}
               </li>
-            ) : (
-              <li className="text-xl hover:text-primary cursor-pointer">
-                <BiSolidMoon onClick={() => setTheme("dark")}/>
-              </li>
-            )
-          }
           </div>
         </ul>
         </div>
@@ -187,16 +192,18 @@ const Navbar = () => {
           }
 
           {/* Mobile Dropdowns */}
-          {showMenu ? <HiMenuAlt1 
+          {showMenu ? (<HiMenuAlt1 
+          onClick={toggleMenu}
           className='cursor-pointer transition-all'
-          /> : <HiMenuAlt3 
+          />) : (<HiMenuAlt3 
           className='cursor-pointer transition-all'
           size={30}
-          onClick={toggleMenu} />}
+          onClick={toggleMenu} />)}
           </div>
       </nav>
     </header>
-    // <ResponsiveMenu showMenu={showMenu} />
+    <ResponsiveMenu showMenu={showMenu} />
+    </>
   );
 };
 

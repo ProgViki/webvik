@@ -1,6 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import FooterLinks from './FooterLinks'
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMobileAlt } from 'react-icons/fa'
+// import { FaLocationCrosshairs } from 'react-icons/fa6'
 
 const Footer = () => {
 
@@ -35,12 +36,29 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='text-white rounded-t-3xl bg-gradient-to-r from-violet-950 to-violet-900'>
-      <div className='mx-auto max-w-[1200px] p-4'>
-        <div className='px-3 py-8'>
-
+    <footer className='text-white rounded-t-3xl bg-gradient-to-r from-violet-950 to-violet-900 mt-4'>
+      <div className='mx-auto max-w-[1200px] p-4 '>
+        <div className='grid grid-cols-2 md:grid-cols-4 md:px-10 col-span-3 gap-12'>
+          <div className=' py-8'>
+          <h1 className="mb-3 text-justify text-xl font-bold sm:text-left sm:text-3xl">
+            <a href="/#home">WEB
+            <span className='inline-block font-bold text-primary '>VIK</span>
+            </a>
+          </h1>
+          <p className=''>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquam ut quidem architecto
+             quas vero quaerat nisi laudantium explicabo beatae!
+          </p>
+          <br />
+          <div className='flex items-center gap-3'>
+            <FaLocationArrow />
+            <p>Ajah, Lagos Nigeria</p>
+          </div>
+          <div className='flex items-center gap-3'>
+            <FaMobileAlt />
+            <p>+234 7032375614</p>
+          </div>
         </div>
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:pl-10 col-span-2'>
           <div className='px-4 py-8'>
             <h1 className='mb-3 text-justify text-xl font-bold sm:text-left sm:text-xl'>
               Important Links
@@ -61,7 +79,7 @@ const Footer = () => {
             <h1 className='mb-3 text-justify text-xl font-bold sm:text-left sm:text-xl'>
               Social Links
             </h1>
-            <div>
+            <div className='flex flex-col gap-3'>
               <h1>Subscribe to our newsletter</h1>
               <input 
               type='text'
@@ -85,8 +103,8 @@ const Footer = () => {
       </div>
 
       {/* Footer copyright section */}
-      <div>
-        <p>
+      <div className='bottom-footer'>
+        <p className='text-center text-gray-500 py-6 border-t-2 border-gray-300/50'>
           Copyright 2021. All rights reserved.
         </p>
       </div>

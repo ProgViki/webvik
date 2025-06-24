@@ -8,6 +8,7 @@ import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
 import OverviewCounter from './components/overiew/OverviewCounter'
 import SimpleBanner from './components/simpleBanner/SimpleBanner'
+import AOS from 'aos'
 
 function App() {
   useEffect(() => {
