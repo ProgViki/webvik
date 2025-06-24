@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl md:text-3xl">
           <a href="#">
-            VIK <span className="inline-block font-bold text-primary">WEB</span>
+            WEB <span className="inline-block font-bold text-primary">VIK</span>
           </a>
         </div>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <FaCaretDown className='transition-all duration-300 group-hover:rotate-180' />
               </span>
             </a>
-              <div className='className="absolute -left-9 z-[99999] hidden group-hover:block bg-white text-black mt-48 shadow-md rounded-b-3xl w-[150px] p-2'>
+              <div className='className="absolute top-full -left-9 z-[99999] hidden group-hover:block bg-white text-black mt-48 shadow-md rounded-b-3xl w-[150px] p-2'>
                 <ul className="space-y-3">
                   <li className="p-2 hover:bg-gray-100 cursor-pointer">Services</li>
                   <li className="p-2 hover:bg-gray-100 cursor-pointer">About Us</li>
@@ -74,62 +74,44 @@ const Navbar = () => {
               </span>
               {/* <IoMdArrowDropdown /> */}
             </a>
-            <div className='absolute left-9 z-[99999] hidden group-hover:block bg-white text-black mt-140 shadow-md rounded-b-3xl w-[150px] p-2'>
-              <div className='grid grid-cols-3 gap-5'>
-                <div className='overflow-hidden'>
-                  <img src="https://picsum.photos/200" alt="not found"
-                  className='max-h-[300px] w-full rounded-b-3xl object-fill'
-                  />
-                </div>
-                {/* <h3>Development</h3>
-                <ul>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Web Design</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Development</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">SEO</li>
-            </ul> */}
-              <div className='col-span-2'>
-                <h1 className='pb-1 text-2xl font-semibold'>Best Selling</h1>
-                <p className='text-sm text-slate-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  Dolore provident esse quos reprehenderit numquam iste fugit 
-                  aut est odit dignissimos explicabo facilis maxime modi consequatur
-                   laboriosam perspiciatis rerum atque quod, libero autem corrupti optio? Ducimus necessitatibus 
-                   consequatur incidunt expedita 
-                   tenetur doloremque esse eos qui sint accusantium a, sunt nulla delectus iusto beatae ullam 
-                   sit animi odit assumenda exercitationem! Ullam architecto illum, ab tempore sapiente molestias, 
-                   cum minima deleniti, repellendus expedita tenetur explicabo ea dolorum dicta possimus nisi et atque! 
-                   Exercitationem inventore eum delectus excepturi aperiam consequatur sequi officia ipsum molestiae
-                   expedita commodi, ad vitae vel corrupti neque dicta, vero quo.
-                   <div className='grid grid-cols-3 mt-4'>
-                    <div>
-                       <h1>Development</h1>
-                <ul>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Web Development</li>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Mobile Development</li>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Software Development</li>
-            </ul>
-                    </div>
-                    <div>
-                       <h1>Development</h1>
-                <ul>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Web Development</li>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Mobile Development</li>
-              <li className="px-4 py-2 text-black/70 hover:text-primary cursor-pointer">Software Development</li>
-            </ul>
-                    </div>
-                    <div>
-                      <img 
-                      src="https://picsum.photos/180" 
-                      alt="not found" />
-                    </div>
-                   </div>
-                   </p>
-              </div>
-              </div>
-              
-              <div className='third'>
-                <img src="" alt="pix" />
-              </div>
-            </div>
+           <div className="absolute top-full -left-159 right-0 z-[99999] hidden group-hover:block bg-white text-black shadow-2xl rounded-b-3xl w-screen p-6 border-t border-primary">
+                <div className='max-w-7xl'>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Left Image */}
+    <div className="hidden md:block">
+      <img src="https://picsum.photos/200" alt="Services" className="w-full h-auto rounded-2xl object-cover" />
+    </div>
+
+    {/* Center Text Content */}
+    <div className="md:col-span-2">
+      <h2 className="text-2xl font-bold mb-2">Best Selling Services</h2>
+      <p className="text-sm text-slate-600 mb-4">
+        We provide industry-standard solutions in software, mobile, and web development to help your business grow and innovate.
+      </p>
+
+      <div className="grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 className="font-semibold text-primary mb-2">Development</h3>
+          <ul>
+            <li className="py-1 hover:text-primary cursor-pointer">Web Development</li>
+            <li className="py-1 hover:text-primary cursor-pointer">Mobile Development</li>
+            <li className="py-1 hover:text-primary cursor-pointer">Software Development</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold text-primary mb-2">Design</h3>
+          <ul>
+            <li className="py-1 hover:text-primary cursor-pointer">UI/UX Design</li>
+            <li className="py-1 hover:text-primary cursor-pointer">Branding</li>
+            <li className="py-1 hover:text-primary cursor-pointer">Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
           </li>
 
           {/* About Us */}
